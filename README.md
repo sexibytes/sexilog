@@ -1,3 +1,3 @@
 # SexiLog
 
-Default repository for awseome appliance http://www.sexilog.fr
+Default repository for awesome appliance http://www.sexilog.fr
