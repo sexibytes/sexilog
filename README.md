@@ -13,4 +13,4 @@ SexiLog is a specific ELK virtual appliance designed for vSphere environment. It
 
 *Official website for this awesome appliance is available at http://www.sexilog.fr*
 
-*Checkout the **Read The F#king Manual** page at http://www.sexilog.fr/rtfm/*
+*Checkout the "Read The F#king Manual" page at http://www.sexilog.fr/rtfm/*
