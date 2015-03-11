@@ -1,0 +1,45 @@
+; -*- mode: clojure; -*-
+; vim: filetype=clojure
+
+(logging/init {:file "/var/log/riemann/riemann.log"})
+
+; Listen on the local interface over TCP (5555), UDP (5555), and websockets
+; (5556)
+(let [host "127.0.0.1"]
+  (tcp-server {:host host})
+  (udp-server {:host host})
+  (ws-server  {:host host}))
+
+; Expire old events from the index every 5 seconds.
+(periodically-expire 5)
+
+(let [index (index)]
+  ; Inbound events will be passed to these streams:
+  (streams
+    (default :ttl 60
+      ; Index all events immediately.
+      index
+
+      ; Log expired events.
+      (expired
+        (fn [event] (info "expired" event))))))
+
+(def email(mailer { :from "%EMAIL_FROM%" :host "%IP%" :subject (fn [events] (str "[" (count (distinct (map :host events))) "] src haz [" (count (map :service events)) "] " (apply str (distinct (map :service events))))) :body (fn [events] (clojure.string/join "\n--\n" [(clojure.string/join "\n" (sort (distinct (map (fn [event] (:host event)) events)))) (clojure.string/join "\n" (map (fn [event] (:description event)) events))])) }))
+
+(def emailp(mailer { :from "%EMAIL_FROM%" :host "%IP%" :subject (fn [events] (str "* [" (count (distinct (map :host events))) "] src haz [" (count (map :service events)) "] " (apply str (distinct (map :service events))))) :body (fn [events] (clojure.string/join "\n--\n" [(clojure.string/join "\n" (sort (distinct (map (fn [event] (:host event)) events)))) (clojure.string/join "\n" (map (fn [event] (:description event)) events))])) }))
+
+
+(streams
+ (by [:service]
+  (where (state "achtung")
+   (rollup 0 10
+    (emailp "%EMAIL_TO%")
+    )
+   )
+  (where (state "alert")
+   (rollup 0 60
+    (email "%EMAIL_TO%")
+    )
+   )
+  )
+)
