@@ -87,6 +87,7 @@ func_restartservices() {
   echo -e "                     /etc/init.d/logstash"
   echo -e "                     /etc/init.d/elasticsearch"
   echo -e "                     /etc/init.d/node-app"
+  echo -e "                     /etc/init.d/rsyslog"
   echo -e ""
   echo -e -n "Are you sure you want to restart SexiLog services? (y/N): $clean"
 
@@ -100,6 +101,7 @@ func_restartservices() {
     /etc/init.d/riemann start
     /etc/init.d/logstash start
     /etc/init.d/node-app restart --force
+    /etc/init.d/rsyslog restart
     echo -e ""
     echo -e "SexiLog services restarted"
     echo -e ""
