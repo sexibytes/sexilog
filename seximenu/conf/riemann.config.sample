@@ -32,12 +32,12 @@
 (streams
  (by [:service]
   (where (state "achtung")
-   (rollup 0 10
+   (rollup 0 60
     (emailp "%EMAIL_TO%")
     )
    )
   (where (state "alert")
-   (rollup 0 60
+   (rollup 0 3600
     (email "%EMAIL_TO%")
     )
    )
