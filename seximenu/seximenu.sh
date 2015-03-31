@@ -42,7 +42,7 @@ show_menu() {
     local choice
     read choice
     case $choice in
-      0) clear; SSHPID=`ps aux | egrep "sshd: [a-zA-Z]+@" | awk {' print $2 '}`; kill $SSHPID ;;
+      0) clear; SSHPID=`ps aux | egrep "sshd: [a-zA-Z]+@" | awk {' print $2 '}`; kill $SSHPID; CONSPID=`ps aux | egrep "tty1.*/bin/login" | grep -v egrep | awk {' print $2 '}`; kill $CONSPID ;;
       1) exit 0 ;;
       2) func_reboot ;;
       3) func_halt ;;
