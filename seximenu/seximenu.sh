@@ -493,8 +493,8 @@ pause(){
 # Menu header
 func_echo-header(){
   stateriemann=`/etc/init.d/riemann status`
-  stateelasticsearch=`/etc/init.d/logstash status`
-  statelogstash=`/etc/init.d/elasticsearch status`
+  statelogstash=`/etc/init.d/logstash status`
+  stateelasticsearch=`/etc/init.d/elasticsearch status`
   statenodeapp=`/etc/init.d/node-app status`
   clear                                                           
   echo ""
