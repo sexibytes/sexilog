@@ -1,4 +1,4 @@
-![SexiBanner](http://www.sexilog.fr/wp-content/uploads/2015/04/SexiBanner.png)
+[![SexiBanner](http://www.sexilog.fr/wp-content/uploads/2015/04/SexiBanner.png)](http://www.sexilog.fr)
 
 SexiLog is a specific ELK virtual appliance designed for vSphere environment. It’s pre-configured and heavily tuned for VMware ESXi logs. Once connected to your network, set SexiLog as syslog remote host and relax.
 
