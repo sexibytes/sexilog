@@ -341,7 +341,7 @@ func_networksettings() {
 
       # Write new hosts file
       echo "127.0.0.1   localhost" > /etc/hosts
-      echo "$IP   $inputhostname" >> /etc/hosts
+      echo "$inputip   $inputhostname" >> /etc/hosts
       echo "$inputhostname" > /etc/hostname
 
       # Set the hostname for the active system
