@@ -20,7 +20,7 @@
 #
 # Based on EFA-project configuration tool
 # http://efa-project.org/
-# 
+#
 
 # Enable Extended Globs
 shopt -s extglob
@@ -430,7 +430,7 @@ func_riemann() {
         fi
       fi
     done
-    
+
     func_echo-header
     echo -e " Here are settings that will be applied:\n"
     echo -e " SMTP server IP:       $inputip"
@@ -496,7 +496,7 @@ func_echo-header(){
   statelogstash=`/etc/init.d/logstash status`
   stateelasticsearch=`/etc/init.d/elasticsearch status`
   statenodeapp=`/etc/init.d/node-app status`
-  clear                                                           
+  clear
   echo ""
   echo -e "      _/_/_/                      _/  _/                            "
   echo -e "   _/          _/_/    _/    _/      _/          _/_/      _/_/_/   "
@@ -505,12 +505,6 @@ func_echo-header(){
   echo -e "_/_/_/      _/_/_/  _/    _/  _/  _/_/_/_/    _/_/      _/_/_/      "
   echo -e "                                                           _/       "
   echo -e "                                                      _/_/          "
-  # echo -e " ______     ______     __  __     __     __         ______     ______    "
-  # echo -e "/\  ___\   /\  ___\   /\_\_\_\   /\ \   /\ \       /\  __ \   /\  ___\   "
-  # echo -e "\ \___  \  \ \  __\   \/_/\_\/_  \ \ \  \ \ \____  \ \ \/\ \  \ \ \__ \  "
-  # echo -e " \/\_____\  \ \_____\   /\_\/\_\  \ \_\  \ \_____\  \ \_____\  \ \_____\ "
-  # echo -e "  \/_____/   \/_____/   \/_/\/_/   \/_/   \/_____/   \/_____/   \/_____/ "
-  # echo -e "                                                                         "
   echo ""
   echo -e "Hostname:    `hostname`"
   echo -e "IP:          `ifconfig eth0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*'`"
@@ -519,12 +513,12 @@ func_echo-header(){
   echo ""
   echo -e "`df -h | egrep "Filesystem|rootfs|sexilog" | sed -e "s/                                  //"`"
   echo ""
-  if [[ $stateelasticsearch =~ "is running" ]]; then
+  if [[ $stateelasticsearch =~ "Active: active (running)" ]]; then
     echo -e -n " elasticsearch [$green RUNNING $clean]"
   else
     echo -e -n " elasticsearch [$red FAILED  $clean]"
   fi
-  if [[ $stateriemann =~ "is running" ]]; then
+  if [[ $stateriemann =~ "Active: active (running)" ]]; then
     echo -e "              riemann       [$green RUNNING $clean]"
   else
     echo -e "              riemann       [$red FAILED  $clean]"
