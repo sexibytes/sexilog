@@ -511,7 +511,7 @@ func_echo-header(){
   echo -e "Netmask:     `ifconfig eth0 | grep -Eo ' (Mask:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*'`"
   echo -e "GW:          "`ip route show | grep -Eo "default via ([0-9]*\.){3}[0-9]*" | grep -Eo '([0-9]*\.){3}[0-9]*'`""
   echo ""
-  echo -e "`df -h | egrep "Filesystem|rootfs|sexilog" | sed -e "s/                                  //"`"
+  echo -e "`df -h | egrep "Filesystem|/dev/dm-0|sexilog"`"
   echo ""
   if [[ $stateelasticsearch =~ "Active: active (running)" ]]; then
     echo -e -n " elasticsearch [$green RUNNING $clean]"
