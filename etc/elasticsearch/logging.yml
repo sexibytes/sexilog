@@ -1,0 +1,17 @@
+# Mark the dailyRollingFile Appender
+#  file:
+#    type: dailyRollingFile
+#    file: ${path.logs}/${cluster.name}.log
+#    datePattern: "'.'yyyy-MM-dd"
+#    layout:
+#      type: pattern
+#      conversionPattern: "[%d{ISO8601}][%-5p][%-25c] %m%n"
+
+# Add the file Appender
+file:
+  type: file
+  file: ${path.logs}/${cluster.name}.log
+  datePattern: "'.'yyyy-MM-dd"
+  layout:
+    type: pattern
+    conversionPattern: "[%d{ISO8601}][%-5p][%-25c] %m%n"
