@@ -1,0 +1,599 @@
+[
+  {
+    "_id": "SexiHome",
+    "_type": "dashboard",
+    "_source": {
+      "title": "SexiHome",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"generic-allEvents\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"hostname\",\"syslog_facility\",\"message_program\",\"message_body\"],\"id\":\"detailledMessage\",\"panelIndex\":2,\"row\":5,\"size_x\":12,\"size_y\":8,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"legendOpen\":false}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-15m",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "SexiBoard:Kommandantur",
+    "_type": "dashboard",
+    "_source": {
+      "title": "SexiBoard:Kommandantur",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"Kommandantur:Local6Events\",\"panelIndex\":11,\"row\":1,\"size_x\":12,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Kommandantur-ALERTS-OVER-TIME\",\"panelIndex\":12,\"row\":3,\"size_x\":12,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"_source\"],\"id\":\"Kommandantur-Search\",\"panelIndex\":13,\"row\":12,\"size_x\":12,\"size_y\":6,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"},{\"id\":\"Kommandantur-Hostname\",\"type\":\"visualization\",\"panelIndex\":14,\"size_x\":6,\"size_y\":5,\"col\":7,\"row\":7},{\"id\":\"Kommandantur-Alert\",\"type\":\"visualization\",\"panelIndex\":15,\"size_x\":6,\"size_y\":5,\"col\":1,\"row\":7}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"legendOpen\":false}},\"P-11\":{\"vis\":{\"legendOpen\":false}},\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-4\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-14\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-15\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-30m",
+      "refreshInterval": {
+        "display": "1 minute",
+        "pause": false,
+        "section": 2,
+        "value": 60000
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "SexiBoard:Immigrating",
+    "_type": "dashboard",
+    "_source": {
+      "title": "SexiBoard:Immigrating",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"id\":\"Immigrating-HistoBar\",\"type\":\"visualization\",\"panelIndex\":1,\"size_x\":12,\"size_y\":4,\"col\":1,\"row\":1},{\"id\":\"Immigrating-Search\",\"type\":\"search\",\"panelIndex\":2,\"size_x\":12,\"size_y\":5,\"col\":1,\"row\":5,\"columns\":[\"_source\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"legendOpen\":true}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-7d",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "section": 0,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "SexiBoard:FailedTo",
+    "_type": "dashboard",
+    "_source": {
+      "title": "SexiBoard:FailedTo",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"id\":\"FailedTo-HistoBar\",\"type\":\"visualization\",\"panelIndex\":1,\"size_x\":12,\"size_y\":4,\"col\":1,\"row\":1},{\"id\":\"FailedTo-Search\",\"type\":\"search\",\"panelIndex\":2,\"size_x\":12,\"size_y\":5,\"col\":1,\"row\":5,\"columns\":[\"_source\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-24h",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "section": 0,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "SexiBoard:NFSLock",
+    "_type": "dashboard",
+    "_source": {
+      "title": "SexiBoard:NFSLock",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"id\":\"NFSLock-Histo\",\"type\":\"visualization\",\"panelIndex\":1,\"size_x\":12,\"size_y\":4,\"col\":1,\"row\":1},{\"id\":\"NFSLock-Search\",\"type\":\"search\",\"panelIndex\":2,\"size_x\":12,\"size_y\":7,\"col\":1,\"row\":5,\"columns\":[\"_source\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-24h",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "section": 0,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "SexiBoard:NMP",
+    "_type": "dashboard",
+    "_source": {
+      "title": "SexiBoard:NMP",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"id\":\"NMP-Histo\",\"type\":\"visualization\",\"panelIndex\":1,\"size_x\":12,\"size_y\":4,\"col\":1,\"row\":1},{\"id\":\"NMP-Search\",\"type\":\"search\",\"panelIndex\":2,\"size_x\":12,\"size_y\":4,\"col\":1,\"row\":5,\"columns\":[\"_source\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-24h",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "section": 0,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "SexiBoard:precopyStunTime",
+    "_type": "dashboard",
+    "_source": {
+      "title": "SexiBoard:precopyStunTime",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"precopyStunTime-Chart\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":4,\"type\":\"visualization\"},{\"id\":\"precopyStunTime-Search\",\"type\":\"search\",\"panelIndex\":2,\"size_x\":12,\"size_y\":4,\"col\":1,\"row\":5,\"columns\":[\"hostname\",\"syslog_facility\",\"message_program\",\"message_body\",\"precopyStunTime\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":true}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-24h",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "section": 0,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "detailledMessage",
+    "_type": "search",
+    "_source": {
+      "title": "detailledMessage",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "hostname",
+        "syslog_facility",
+        "message_program",
+        "message_body"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "messageOnly",
+    "_type": "search",
+    "_source": {
+      "title": "messageOnly",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "message_body"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "Kommandantur-Search",
+    "_type": "search",
+    "_source": {
+      "title": "Kommandantur-Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"query\":\"esx_problem.raw:esx.problem.* OR esx_audit.raw:esx.audit.* OR esx_clear.raw:esx.clear.* OR (vob.raw:vob.* AND NOT vob.raw:/vob.*.up|enabled|enable|unblocked|connected|add|improved|pluggedback|deviceonline|started|restored|mounted|created/)  OR nmp.raw:nmp_* OR com_vmware.raw:com.vmware.vc.ha.* OR (syslog_facility:local6 AND NOT (vmkwarning OR syslog_severity:error)) OR (_missing_:esx_problem AND _missing_:esx_audit AND _missing_:esx_clear AND _missing_:vob AND _missing_:nmp AND _missing_:com_vmware AND _missing_:sense_data) OR (com_vmware.raw:com.vmware.* AND NOT com_vmware.raw:com.vmware.vc.ha.*) OR sense_data.raw:* OR message_program:vmkwarning OR (syslog_severity:error AND NOT message_program:hostprofiletrace) OR vob.raw:/vob.*.up|enabled|enable|unblocked|connected|add|improved|pluggedback|deviceonline|started|restored|mounted|created|on/\",\"analyze_wildcard\":true}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "FailedTo-Search",
+    "_type": "search",
+    "_source": {
+      "title": "FailedTo-Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"query\":{\"query_string\":{\"query\":\"_exists_:failed_to.raw\",\"analyze_wildcard\":true}}}"
+      }
+    }
+  },
+  {
+    "_id": "Immigrating-Search",
+    "_type": "search",
+    "_source": {
+      "title": "Immigrating-Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"query\":{\"query_string\":{\"query\":\"\\\"immigrating VM\\\"\",\"analyze_wildcard\":true}}}"
+      }
+    }
+  },
+  {
+    "_id": "Msg-Search",
+    "_type": "search",
+    "_source": {
+      "title": "Msg-Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"query\":{\"query_string\":{\"query\":\"_exists_:msg.raw\",\"analyze_wildcard\":true}}}"
+      }
+    }
+  },
+  {
+    "_id": "NMP-Search",
+    "_type": "search",
+    "_source": {
+      "title": "NMP-Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"query\":{\"query_string\":{\"query\":\"_exists_:nmp.raw\",\"analyze_wildcard\":true}}}"
+      }
+    }
+  },
+  {
+    "_id": "NFSLock-Search",
+    "_type": "search",
+    "_source": {
+      "title": "NFSLock-Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"query\":{\"query_string\":{\"query\":\"NFSLock\",\"analyze_wildcard\":true}}}"
+      }
+    }
+  },
+  {
+    "_id": "precopyStunTime-Search",
+    "_type": "search",
+    "_source": {
+      "title": "precopyStunTime-Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "hostname",
+        "syslog_facility",
+        "message_program",
+        "message_body",
+        "precopyStunTime"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"_exists_:precopyStunTime\"}}}"
+      }
+    }
+  },
+  {
+    "_id": "Kommandantur-AllEvents",
+    "_type": "visualization",
+    "_source": {
+      "title": "Kommandantur-AllEvents",
+      "visState": "{\"title\":\"Kommandantur-AllEvents\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"s\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"esx.problem.*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"esx.audit.*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"esx.clear.*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"vob.* AND NOT /vob.*.up|enabled|enable|unblocked|connected|add|improved|pluggedback|deviceonline|started|restored|mounted|created/\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"nmp_*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"com.vmware.vc.ha.*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"syslog_facility:local6 AND NOT (vmkwarning OR syslog_severity:error)\",\"analyze_wildcard\":true}}},\"label\":\"facility:local6\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"_missing_:esx_problem AND _missing_:esx_audit AND _missing_:esx_clear AND _missing_:vob AND _missing_:nmp AND _missing_:com_vmware AND _missing_:sense_data\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"com.vmware.* AND NOT com.vmware.vc.ha.*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"message_program:vmkwarning\",\"analyze_wildcard\":true}}},\"label\":\"vmkwarning\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"syslog_severity:error AND NOT message_program:hostprofiletrace\",\"analyze_wildcard\":true}}},\"label\":\"severity:error\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"nmp_*\":\"#BA43A9\",\"syslog_facility:local6 AND NOT (vmkwarning OR syslog_severity:error)\":\"#E5AC0E\",\"syslog_severity:error AND NOT message_program:hostprofiletrace\":\"#E24D42\",\"_missing_:esx_problem AND _missing_:esx_audit AND _missing_:esx_clear AND _missing_:vob AND _missing_:nmp AND _missing_:com_vmware AND _missing_:sense_data\":\"#BF1B00\",\"facility:local6\":\"#F2C96D\",\"severity:error\":\"#E24D42\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "Kommandantur-FilteredEvents",
+    "_type": "visualization",
+    "_source": {
+      "title": "Kommandantur-FilteredEvents",
+      "visState": "{\"title\":\"Kommandantur-FilteredEvents\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"s\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"esx.problem.*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"esx.audit.*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"esx.clear.*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"vob.* AND NOT /vob.*.up|enabled|enable|unblocked|connected|add|improved|pluggedback|deviceonline|started|restored|mounted|created/\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"nmp_*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"com.vmware.vc.ha.*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"_missing_:esx_problem AND _missing_:esx_audit AND _missing_:esx_clear AND _missing_:vob AND _missing_:nmp AND _missing_:com_vmware AND _missing_:sense_data\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"com.vmware.* AND NOT com.vmware.vc.ha.*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"message_program:vmkwarning\",\"analyze_wildcard\":true}}},\"label\":\"vmkwarning\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"syslog_severity:error AND NOT message_program:hostprofiletrace\",\"analyze_wildcard\":true}}},\"label\":\"severity:error\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"_missing_:esx_problem AND _missing_:esx_audit AND _missing_:esx_clear AND _missing_:vob AND _missing_:nmp AND _missing_:com_vmware AND _missing_:sense_data\":\"#BF1B00\",\"facility:local6\":\"#F2C96D\",\"nmp_*\":\"#BA43A9\",\"severity:error\":\"#E24D42\",\"syslog_facility:local6 AND NOT (vmkwarning OR syslog_severity:error)\":\"#E5AC0E\",\"syslog_severity:error AND NOT message_program:hostprofiletrace\":\"#E24D42\"},\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  },
+  {
+    "_id": "generic-HostnameTerms",
+    "_type": "visualization",
+    "_source": {
+      "title": "generic-HostnameTerms",
+      "visState": "{\"title\":\"generic-HostnameTerms\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"hostname.raw\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"HOSTNAME\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "allEvents-Histo",
+    "_type": "visualization",
+    "_source": {
+      "title": "allEvents-Histo",
+      "visState": "{\"title\":\"allEvents-Histo\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Count\":\"#E5AC0E\"},\"legendOpen\":false}}",
+      "description": "",
+      "savedSearchId": "detailledMessage",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "generic-AlertTerms",
+    "_type": "visualization",
+    "_source": {
+      "title": "generic-AlertTerms",
+      "visState": "{\"title\":\"generic-AlertTerms\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"alert.raw\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"ALERT\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Kommandantur-ALERTS-OVER-TIME",
+    "_type": "visualization",
+    "_source": {
+      "title": "Kommandantur-ALERTS OVER TIME",
+      "visState": "{\"title\":\"Kommandantur-ALERTS OVER TIME\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"s\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"esx_problem.raw:esx.problem.*\",\"analyze_wildcard\":true}}},\"label\":\"\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"esx_audit.raw:esx.audit.*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"esx_clear.raw:esx.clear.*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"vob.raw:vob.* AND NOT vob.raw:/vob.*.up|enabled|enable|unblocked|connected|add|improved|pluggedback|deviceonline|started|restored|mounted|created/\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"nmp.raw:nmp_*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"com_vmware.raw:com.vmware.vc.ha.*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"_missing_:esx_problem AND _missing_:esx_audit AND _missing_:esx_clear AND _missing_:vob AND _missing_:nmp AND _missing_:com_vmware AND _missing_:sense_data\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"com_vmware.raw:com.vmware.* AND NOT com_vmware.raw:com.vmware.vc.ha.*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"sense_data.raw:*\",\"analyze_wildcard\":true}}}},{\"input\":{\"query\":{\"query_string\":{\"query\":\"vob.raw:/vob.*.up|enabled|enable|unblocked|connected|add|improved|pluggedback|deviceonline|started|restored|mounted|created|on/\",\"analyze_wildcard\":true}}}}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"esx_problem.raw:esx.problem.*\":\"#BF1B00\",\"_missing_:esx_problem AND _missing_:esx_audit AND _missing_:esx_clear AND _missing_:vob AND _missing_:nmp AND _missing_:com_vmware AND _missing_:sense_data\":\"#99440A\",\"com_vmware.raw:com.vmware.* AND NOT com_vmware.raw:com.vmware.vc.ha.*\":\"#962D82\",\"com_vmware.raw:com.vmware.vc.ha.*\":\"#AEA2E0\",\"esx_audit.raw:esx.audit.*\":\"#70DBED\",\"esx_clear.raw:esx.clear.*\":\"#B7DBAB\",\"nmp.raw:nmp_*\":\"#6D1F62\",\"sense_data.raw:*\":\"#0A437C\",\"vob.raw:vob.* AND NOT vob.raw:/vob.*.up|enabled|enable|unblocked|connected|add|improved|pluggedback|deviceonline|started|restored|mounted|created/\":\"#F4D598\"}}}",
+      "description": "",
+      "savedSearchId": "Kommandantur-Search",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Kommandantur:Local6Events",
+    "_type": "visualization",
+    "_source": {
+      "title": "Kommandantur:Local6Events",
+      "visState": "{\"title\":\"Kommandantur:Local6Events\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"s\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"syslog_facility:local6 AND NOT (vmkwarning OR syslog_severity:error)\",\"analyze_wildcard\":true}}},\"label\":\"facility:local6\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"message_program:vmkwarning\",\"analyze_wildcard\":true}}},\"label\":\"vmkwarning\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"syslog_severity:error AND NOT message_program:hostprofiletrace\",\"analyze_wildcard\":true}}},\"label\":\"severity:error\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":true,\"colors\":{\"facility:local6\":\"#EAB839\",\"severity:error\":\"#E24D42\",\"vmkwarning\":\"#EF843C\"}}}",
+      "description": "",
+      "savedSearchId": "Kommandantur-Search",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "LOCAL6-EVENTS",
+    "_type": "visualization",
+    "_source": {
+      "title": "LOCAL6 EVENTS",
+      "visState": "{\"title\":\"LOCAL6 EVENTS\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"s\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"syslog_facility:local6 AND NOT (vmkwarning OR syslog_severity:error)\",\"analyze_wildcard\":true}}},\"label\":\"facility:local6\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"message_program:vmkwarning\",\"analyze_wildcard\":true}}},\"label\":\"vmkwarning\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"syslog_severity:error AND NOT message_program:hostprofiletrace\",\"analyze_wildcard\":true}}},\"label\":\"severity:error\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":true,\"colors\":{\"facility:local6\":\"#E5AC0E\",\"severity:error\":\"#BF1B00\",\"vmkwarning\":\"#F9934E\"}}}",
+      "description": "",
+      "savedSearchId": "detailledMessage",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "generic-allEvents",
+    "_type": "visualization",
+    "_source": {
+      "title": "generic-allEvents",
+      "visState": "{\"title\":\"generic-allEvents\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"s\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Count\":\"#E5AC0E\"},\"legendOpen\":false}}",
+      "description": "",
+      "savedSearchId": "detailledMessage",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Kommandantur-Hostname",
+    "_type": "visualization",
+    "_source": {
+      "title": "Kommandantur-Hostname",
+      "visState": "{\"title\":\"Kommandantur-Hostname\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"hostname.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"HOSTNAME\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "Kommandantur-Search",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Kommandantur-Alert",
+    "_type": "visualization",
+    "_source": {
+      "title": "Kommandantur-Alert",
+      "visState": "{\"title\":\"Kommandantur-Alert\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"alert.raw\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"ALERT\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "savedSearchId": "Kommandantur-Search",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "Immigrating-HistoBar",
+    "_type": "visualization",
+    "_source": {
+      "title": "Immigrating-HistoBar",
+      "visState": "{\"title\":\"Immigrating-HistoBar\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"h\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"vm_name.raw\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"NESTED01\":\"#511749\"},\"legendOpen\":false}}",
+      "description": "",
+      "savedSearchId": "Immigrating-Search",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "FailedTo-HistoBar",
+    "_type": "visualization",
+    "_source": {
+      "title": "FailedTo-HistoBar",
+      "visState": "{\"title\":\"FailedTo-HistoBar\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"m\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"failed_to.raw\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "FailedTo-Search",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "NFSLock-Histo",
+    "_type": "visualization",
+    "_source": {
+      "title": "NFSLock-Histo",
+      "visState": "{\"title\":\"NFSLock-Histo\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"m\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"group\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"Busy\",\"analyze_wildcard\":true}}},\"label\":\"\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"\\\"Not found\\\"\",\"analyze_wildcard\":true}}},\"label\":\"Not found\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"\\\"exclusive lock\\\"\",\"analyze_wildcard\":true}}},\"label\":\"exclusive lock\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"\\\"Invalid handle\\\"\",\"analyze_wildcard\":true}}},\"label\":\"Invalid handle\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"\\\"Stop accessing\\\"\",\"analyze_wildcard\":true}}},\"label\":\"Stop accessing\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"\\\"Cannot remove lockfile\\\"\",\"analyze_wildcard\":true}}},\"label\":\"Cannot remove lockfil\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"\\\"No connection\\\"\",\"analyze_wildcard\":true}}},\"label\":\"No connection\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"\\\"Failed to create lock\\\"\",\"analyze_wildcard\":true}}},\"label\":\"Failed to create lock\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"\\\"File is being locked by a consumer\\\"\",\"analyze_wildcard\":true}}},\"label\":\"File is being locked by a consumer\"},{\"input\":{\"query\":{\"query_string\":{\"query\":\"NOT Busy AND NOT \\\"Not found\\\" AND NOT \\\"exclusive lock\\\" AND NOT \\\"Invalid handle\\\" AND NOT \\\"Stop accessing\\\" AND NOT \\\"Cannot remove lockfile\\\" AND NOT \\\"No connection\\\" AND NOT \\\"Failed to create lock\\\" AND NOT \\\"File is being locked by a consumer\\\"\",\"analyze_wildcard\":true}}},\"label\":\"other\"}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "NFSLock-Search",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "NMP-Histo",
+    "_type": "visualization",
+    "_source": {
+      "title": "NMP-Histo",
+      "visState": "{\"title\":\"NMP-Histo\",\"type\":\"histogram\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false,\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"m\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"nmp.raw\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "NMP-Search",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "precopyStunTime-Chart",
+    "_type": "visualization",
+    "_source": {
+      "title": "precopyStunTime-Chart",
+      "visState": "{\"title\":\"precopyStunTime-Chart\",\"type\":\"area\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"interpolate\":\"linear\",\"mode\":\"stacked\",\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"smoothLines\":true,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"precopyStunTime\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+      "description": "",
+      "savedSearchId": "precopyStunTime-Search",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[]}"
+      }
+    }
+  }
+]
