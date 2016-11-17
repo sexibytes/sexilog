@@ -495,7 +495,7 @@ func_echo-header(){
   stateriemann=`/etc/init.d/riemann status`
   statelogstash=`/etc/init.d/logstash status`
   stateelasticsearch=`/etc/init.d/elasticsearch status`
-  statenodeapp=`/etc/init.d/node-app status`
+  statekibana=`/etc/init.d/kibana status`
   clear
   echo ""
   echo -e "      _/_/_/                      _/  _/                            "
@@ -528,10 +528,10 @@ func_echo-header(){
   else
     echo -e -n " logstash      [$red FAILED  $clean]"
   fi
-  if [[ $statenodeapp =~ "Node app running with pid" ]]; then
-    echo -e "              node-app      [$green RUNNING $clean]"
+  if [[ $statekibana =~ "Node app running with pid" ]]; then
+    echo -e "              kibana      [$green RUNNING $clean]"
   else
-    echo -e "              node-app      [$red FAILED  $clean]"
+    echo -e "              kibana      [$red FAILED  $clean]"
   fi
   echo ""
   echo -e "===================================================================="
