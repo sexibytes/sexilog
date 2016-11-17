@@ -1,9 +1,9 @@
 #!/bin/bash
 #
 # SexiLog Configure Tool
-# Version 20150115
+# Version 20161117
 #
-# Copyright (C) 2015  http://www.sexilog.fr
+# Copyright (C) 2016  http://www.sexilog.fr
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -493,7 +493,7 @@ pause(){
 # Menu header
 func_echo-header(){
   stateriemann=`/etc/init.d/riemann status`
-  statelogstash=`/etc/init.d/logstash status`
+  statelogstash=`systemctl status logstash.service`
   stateelasticsearch=`/etc/init.d/elasticsearch status`
   statekibana=`/etc/init.d/kibana status`
   clear
@@ -523,12 +523,12 @@ func_echo-header(){
   else
     echo -e "              riemann       [$red FAILED  $clean]"
   fi
-  if [[ $statelogstash =~ "is running" ]]; then
+  if [[ $statelogstash =~ "Active: active (running)" ]]; then
     echo -e -n " logstash      [$green RUNNING $clean]"
   else
     echo -e -n " logstash      [$red FAILED  $clean]"
   fi
-  if [[ $statekibana =~ "Node app running with pid" ]]; then
+  if [[ $statekibana =~ "is running" ]]; then
     echo -e "              kibana      [$green RUNNING $clean]"
   else
     echo -e "              kibana      [$red FAILED  $clean]"
