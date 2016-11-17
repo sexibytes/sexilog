@@ -529,9 +529,9 @@ func_echo-header(){
     echo -e -n " logstash      [$red FAILED  $clean]"
   fi
   if [[ $statekibana =~ "is running" ]]; then
-    echo -e "              kibana      [$green RUNNING $clean]"
+    echo -e "              kibana        [$green RUNNING $clean]"
   else
-    echo -e "              kibana      [$red FAILED  $clean]"
+    echo -e "              kibana        [$red FAILED  $clean]"
   fi
   echo ""
   echo -e "===================================================================="
