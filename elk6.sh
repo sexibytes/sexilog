@@ -2,7 +2,7 @@
 curl -X PUT "localhost:9200/logstash-sexilog" -H 'Content-Type: application/json' -d'
 {
   "settings" : {
-      "number_of_shards" : 0
+      "number_of_replicas" : 0
   },
   "mappings": {
     "doc": { 
