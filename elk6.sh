@@ -1,6 +1,9 @@
 # Create new index with customized fields
 curl -X PUT "localhost:9200/logstash-sexilog" -H 'Content-Type: application/json' -d'
 {
+  "settings" : {
+      "number_of_shards" : 0
+  },
   "mappings": {
     "doc": { 
       "properties": { 
