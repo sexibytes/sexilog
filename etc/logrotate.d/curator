@@ -1,0 +1,11 @@
+/var/log/elasticsearch-curator/*.log {
+    daily
+    rotate 500
+    size 20M
+    copytruncate
+    compress
+    delaycompress
+    missingok
+    notifempty
+    create 644 elasticsearch elasticsearch
+}
