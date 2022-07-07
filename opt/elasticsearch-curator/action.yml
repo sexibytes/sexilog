@@ -10,6 +10,6 @@ actions:
       kind: prefix
       value: logstash-
     - filtertype: space
-      disk_space: 100
+      disk_space: 480
       use_age: True
       source: creation_date
