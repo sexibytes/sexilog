@@ -1,7 +1,7 @@
 actions:
   1:
     action: delete_indices
-    description:
+    description: blablabla
     options:
       ignore_empty_list: True
       disable_action: False
