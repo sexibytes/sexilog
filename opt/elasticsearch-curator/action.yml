@@ -1,0 +1,15 @@
+actions:
+  1:
+    action: delete_indices
+    description:
+    options:
+      ignore_empty_list: True
+      disable_action: False
+    filters:
+    - filtertype: pattern
+      kind: prefix
+      value: logstash-
+    - filtertype: space
+      disk_space: 100
+      use_age: True
+      source: creation_date
